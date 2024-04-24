@@ -31,9 +31,9 @@ poetry run celery -A abuseipdb.main worker -B
 
 ### Docker-compose
 
-При запуске в Docker дополнительно устанавливать Redis **не нужно**.
+При запуске в Docker-Compose дополнительно устанавливать Redis **не нужно**.
 
-Перед запском отредактиируйте файл __docker-compose.yml__.
+Перед запском отредактируйте файл __docker-compose.yml__.
 
 ```
 docker compose up -d
