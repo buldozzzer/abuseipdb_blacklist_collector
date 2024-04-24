@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "abuseipdb"
+version = "0.1.0"
+description = ""
+authors = ["n.egorov <n.egorov@cloud.gcm>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.31.0"
+black = "^23.11.0"
+configparser = "^6.0.0"
+clickhouse-connect = "^0.6.21"
+python-crontab = "^3.0.0"
+celery = "^5.3.6"
+redis = "^5.0.1"
+
+
+[tool.poetry.group.dev.dependencies]
+autopep8 = "^2.0.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.scripts]
+scheduler = "abuseipdb.main:main"
+
